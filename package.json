@@ -1,6 +1,6 @@
 {
   "name": "functional-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "exports": {
     ".": {
       "import": "./index/es/index.js",
