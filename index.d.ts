@@ -20,13 +20,14 @@ declare class InitHelpers {
      *  2. 请确保 `InitHelpers.vueVersion` 在 `['v2', 'v3']` 中。
      *  3. 请确保环境变量 `VITE_DEBUG_API_KEY` 有效。
      */
-    installFundebugVue(): any;
+    installFundebugVue(apikey: string): any;
 }
 export default InitHelpers;
 
 declare interface IOptions {
     isLogger?: boolean;
     isDebug?: boolean;
+    apikey: string;
     vueVersion?: TVueVersion;
     install?: (install: any) => void;
 }

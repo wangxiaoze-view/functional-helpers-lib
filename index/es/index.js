@@ -1,6 +1,6 @@
 import "fundebug-javascript";
 import "fundebug-vue";
-import { I as p } from "../../index-CDnA4U02.js";
+import { I as p } from "../../index-Dmrlwy4n.js";
 export {
   p as default
 };
