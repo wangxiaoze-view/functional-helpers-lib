@@ -286,6 +286,13 @@ export declare function isEnglish(str: string): boolean;
 export declare function isExcel(src: string): boolean;
 
 /**
+ * @description             是否为外链
+ * @param value {字符串} 网址
+ * @returns {boolean}
+ */
+export declare const isExternal: (value: string) => boolean;
+
+/**
  * @description 根据扩展名确定给定的源字符串是否为文件 URL。
  * @param src -要评估的源字符串。
  * @returns {boolean} -如果源字符串以通用文件扩展名结尾，则返回 true，否则返回 false。
