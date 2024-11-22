@@ -1,5 +1,7 @@
 import { default as default_2 } from 'currency.js';
 import { default as default_3 } from 'ali-oss';
+import { Emitter } from 'mitt';
+import { EventType } from 'mitt';
 import { Ref } from 'vue';
 
 declare interface IHttpResult<T = any> {
@@ -83,6 +85,14 @@ export declare function useLoading(init?: boolean, text?: string): {
  * @returns {{ loading: Ref<boolean>, setLoading: (value: boolean) => void, toggleLoading: () => void, setLoadingText: (value: string) => void }}
  */
 export declare type UseLoadingReturn = ReturnType<typeof useLoading>;
+
+export declare function useMitter(): {
+    emitter: Emitter<Record<EventType, unknown>>;
+    simEmit: (event: string, ...args: any[]) => void;
+    simEmitOn: (event: string, callback: (...args: any[]) => void) => void;
+    simEmitOff: (event: string, callback: (...args: any[]) => void) => void;
+    simEmitClear: () => void;
+};
 
 export declare function useNavigatorApp(): {
     goAppPage: (type: TAppPageType, options: Record<string, unknown>) => void;

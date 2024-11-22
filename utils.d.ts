@@ -2,6 +2,7 @@ import { AxiosInstance } from 'axios';
 import { AxiosRequestConfig } from 'axios';
 import { AxiosResponse } from 'axios';
 import { CreateAxiosDefaults } from 'axios';
+import { default as dayjs } from 'dayjs';
 import { InternalAxiosRequestConfig } from 'axios';
 
 /**
@@ -81,6 +82,8 @@ declare class CreateStorage {
      */
     clearCookie(): void;
 }
+
+export { dayjs }
 
 declare enum ETimePeriodType {
     lastOneMonth = "lastOneMonth",

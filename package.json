@@ -32,7 +32,8 @@
     "ali-oss": "^6.21.0",
     "fundebug-javascript": "^2.8.8",
     "fundebug-vue": "^0.3.6",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "mitt": "^3.0.1"
   },
   "dependencies": {},
   "scripts": {
